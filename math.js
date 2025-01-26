@@ -5,3 +5,9 @@ export function add(numbers) {
     }
     return sum
 }
+
+// Filter Even Numbers:
+export function even(arr) {
+    const newArr = arr.filter((elem) => elem % 2 == 0)
+    return newArr
+}
