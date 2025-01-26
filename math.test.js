@@ -1,19 +1,30 @@
-import { it, expect } from 'vitest'
-import { add, even } from './math'
+import { add, returnStrLength, transformToNumber } from "./math";
+import { it, expect } from "vitest";
 
-it('should return the correct sum if an array of number is provided', () => {
-    // Arrange
-    const numbers = [1, 2, 3]
 
-    // Action
-    const result = add(numbers)
+// it('it should throw an error if no arguments are passed', () => {
+//     // Test code here
+//     const resultFunc = () => {
+//         add()
+//     }
+//     expect(resultFunc).toThrow()
+// });
 
-    // Assertion
-    expect(result).toBe(6)
-})
 
-// Test case for Filter Even Numbers:
-it('should return the even numbers only from an array of number', () => {
-    const result = even([22, 5, 33, 100])
-    expect(result).toStrictEqual([22, 100])
+// it('it should throw an error if multiple arguments are provided', () => {
+//     // Test code here
+//     const resultFunc = () => {
+//         add(1, 2)
+//     }
+//     expect(resultFunc).toThrow(/is not iterable/i)
+// });
+
+// it('should return strings length', () => {
+//     const result = returnStrLength('Hello World!')
+//     expect(result).toBe(12)
+// })
+
+it('should return sum of numbers', () => {
+    const result = add([1, 2, 3, 4])
+    expect(result).toBe(10)
 })

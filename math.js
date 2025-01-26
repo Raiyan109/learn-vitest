@@ -11,3 +11,9 @@ export function even(arr) {
     const newArr = arr.filter((elem) => elem % 2 == 0)
     return newArr
 }
+
+
+export const returnStrLength = (str) => {
+    return str.length
+}
+
